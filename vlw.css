@@ -2,7 +2,6 @@
 ------------------------------------------------ */
 /* https:clal.xyz
    v2.0 | 20180815
-   
 *
 ---------------------------------------------- */
 body {
@@ -17,7 +16,6 @@ ul {
     margin: 0;
     padding: 0;
 	overflow: hidden;
-	background-color:#FFA500;
 }
  nav li{
     float: right;
@@ -49,7 +47,7 @@ box {
   width: 80px;
 }
 
-.picture leftPicture, middlePicture  rightPicture{ 
+.picture leftPicture, middlePicture  rightPicture{
 	border:1px black;
 	width:200px;
 }
@@ -63,33 +61,21 @@ box {
  float:right;
 }
 
-
-h2,
-
-h3,
-h4,
-h5,
-h6,
 .logo {
 	color: #b74e07;
 	font-weight: bold;
 }
 
-h1, h2, h3 {
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+h2, h3 {
 	font-size: 1em;
 	font-weight: bold;
 	margin-bottom: .25em;
-	text-transform: normal;
+	/*text-transform: normal;*/
 }
-h2 {
-	font-size: 1em;
-        text-align: left;
-}
-
-h3 {
-	font-size: 1em;
-}
-
 
 p {
 	margin: 0em;
@@ -109,10 +95,10 @@ th, td {
     text-align: left;
 }
 table {
-    width: 100%;    
+    width: 100%;
     background-color: #FFA500;
 }
-	
+
 a:link {
 	text-decoration: none;
 	color: #a96e5b;
@@ -126,7 +112,7 @@ a:visited {
 a:focus,
 a:hover,
 a:active {
-	background: #a96e5b#587e76; 
+	background: #a96e5b#587e76;
 	text-decoration: none;
 }
 
@@ -141,6 +127,10 @@ a.current {
 a:hover.current {
 	background: #a96e5b;
 	cursor: default;
+}
+
+#header {
+	text-align: center;
 }
 /* The Modal (background) */
 /*.modal {
@@ -170,7 +160,7 @@ a:hover.current {
     /* Position it in the top right corner outside of the modal */
     position: absolute;
     right: 25px;
-    top: 0; 
+    top: 0;
     color: #000;
     font-size: 35px;
     font-weight: bold;
@@ -190,14 +180,15 @@ a:hover.current {
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
 
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 form.addEventListener("submit", myFunc);
+
 
 
 
