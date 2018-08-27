@@ -12,18 +12,23 @@ body {
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 	overflow: hidden;
+	/*background-color: #f78308;*/
 }
- nav li{
-    float: right;
+nav li{
+  float: left;
 }
 
-nav li a: hover{
+/*nav li: hover{
+	background-color: #red;
+}*/
+
+/*nav ul li a: hover{
 	background-color: #a79e84;
-}
+}*/
 
 nav a {
 	display: inline;
@@ -33,21 +38,25 @@ nav a {
 	text-decoration: none;
 }
 
-nav .current {
+nav a:hover{
+	background-color: #f78308;
+	color: #4a2702;
+}
+
+/*nav .current {
 	background:#FAAC58;
 	padding-bottom:10px;
 	top:-5px;
+}*/
 
-}
-
-box {
+/*box {
   background: #2db34a;
   height: 80px;
   position: fixed;
   width: 80px;
-}
+}*/
 
-.picture leftPicture, middlePicture  rightPicture{
+/*.picture leftPicture, middlePicture  rightPicture{
 	border:1px black;
 	width:200px;
 }
@@ -59,22 +68,35 @@ box {
 }
 .rightPicture{
  float:right;
+}*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-.logo {
+/*.logo {
 	color: #b74e07;
 	font-weight: bold;
-}
+}*/
 
 h1 {
 	font-size: 2em;
 	font-weight: bold;
 }
-h2, h3 {
+h2{
 	font-size: 1em;
 	font-weight: bold;
 	margin-bottom: .25em;
-	/*text-transform: normal;*/
+}
+h3{
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0;
+	margin-top: .5em;
+	margin-bottom: 1em;
 }
 
 p {
@@ -83,7 +105,7 @@ p {
 }
 
 /* link states */
-a {
+/*a {
 	padding: .2em;
 }
 table, th, td {
@@ -97,7 +119,7 @@ th, td {
 table {
     width: 100%;
     background-color: #FFA500;
-}
+}*/
 
 a:link {
 	text-decoration: none;
@@ -109,16 +131,16 @@ a:visited {
 	color: #a96e5b;
 }
 
-a:focus,
+/*a:focus,
 a:hover,
 a:active {
 	background: #a96e5b#587e76;
 	text-decoration: none;
-}
+}*/
 
-.nav a:hover {
-	text-decoration: none;
-}
+/*.nav a:hover {
+  background-color: #ffffff;
+}*/
 
 a.current {
 	color: #587e76;
@@ -129,8 +151,13 @@ a:hover.current {
 	cursor: default;
 }
 
-#header {
+.header {
 	text-align: center;
+}
+
+.nav-center{
+	margin: auto;
+	width: 35%;
 }
 /* The Modal (background) */
 /*.modal {
